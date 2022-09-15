@@ -12,6 +12,8 @@ middleware.use(async (ctx, next) => {
 		} else {
 			ctx.session.isAdmin = await isAdmin(ctx.db.admins, ctx.from.id)
 		}
+		ctx.session.isSuperAdmin =
+			ctx.from?.id === Number(process.env.SUPER_ADMIN)
 	}
 	await next()
 })

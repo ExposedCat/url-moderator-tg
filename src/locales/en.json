@@ -20,7 +20,6 @@
 		"fail": "🟥 Error: ${error}"
 	},
 	"errors": {
-		"noRights": "Not enough rights",
 		"unknown": "Something went wrong"
 	}
 }

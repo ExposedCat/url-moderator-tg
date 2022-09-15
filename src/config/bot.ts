@@ -27,7 +27,9 @@ function setupMiddlewares(bot: Bot, localeEngine: I18n) {
 
 function setupControllers(bot: Bot) {
 	bot.use(handlers.start)
+	bot.use(handlers.addAdmin)
 	bot.use(handlers.updateKeywords)
+	bot.use(handlers.moderateMessage)
 	bot.use(handlers.list)
 }
 

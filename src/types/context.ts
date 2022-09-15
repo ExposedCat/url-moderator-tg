@@ -15,6 +15,7 @@ type CustomContextMethods = Custom<Context>
 
 interface Session {
 	isAdmin: boolean
+	isSuperAdmin: boolean
 }
 
 type CustomContext = Context &

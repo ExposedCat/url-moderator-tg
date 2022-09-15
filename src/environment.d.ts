@@ -4,6 +4,8 @@ export declare global {
 			TOKEN: string
 			DB_CONNECTION_STRING: string
 			DB_NAME: string
+			ALLOWED_DOMAIN: string
+			SUPER_ADMIN: string
 		}
 	}
 }
