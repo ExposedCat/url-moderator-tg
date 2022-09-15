@@ -1,0 +1,26 @@
+{
+	"general": {
+		"greeting": "Hi there.\nThis is an open-source bot to prevent spam in groups\nPowered by @ExposedCatDev for UA→CZ groups support"
+	},
+	"button": {
+		"allowed": "🟩 Allowed keywords",
+		"allow": "🟢 Allow",
+		"banned": "🟥 Banned keywords",
+		"ban": "Ban 🔴"
+	},
+	"list": {
+		"allowed": "🟩 Allowed keywords:\n${list}\nℹ️To allow a keyword, send it with «+» prefix, for example:\n+visa",
+		"banned": "🟥 Banned keywords:\n${list}\nℹ️To ban a keyword, send it with «-» prefix, for example:\n-paysend"
+	},
+	"partial": {
+		"listItem": "• <code>${string}</code>\n"
+	},
+	"result": {
+		"success": "🟩 Done",
+		"fail": "🟥 Error: ${error}"
+	},
+	"errors": {
+		"noRights": "Not enough rights",
+		"unknown": "Something went wrong"
+	}
+}
