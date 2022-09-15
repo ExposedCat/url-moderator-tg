@@ -22,7 +22,14 @@ controller
 				}
 			}
 			const { ok } = await validateLink(ctx.db.keywords, url)
-			await ctx.reply(ok ? 'OK' : 'Delete')
+			if (!ok) {
+				// TODO: Move to the separate service
+				try {
+					await ctx.deleteMessage()
+				} catch {
+					await ctx.text('error.notEnoughRights')
+				}
+			}
 		}
 	})
 

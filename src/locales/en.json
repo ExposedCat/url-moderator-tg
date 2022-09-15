@@ -19,7 +19,8 @@
 		"success": "🟩 Done",
 		"fail": "🟥 Error: ${error}"
 	},
-	"errors": {
-		"unknown": "Something went wrong"
+	"error": {
+		"unknown": "Something went wrong",
+		"notEnoughRights": "This bot requires rights to delete spam messages automatically.\nAdd it via Manage group ⇒ Moderator ⇒ Promote to admin ⇒ Delete messages ⇒ OK"
 	}
 }

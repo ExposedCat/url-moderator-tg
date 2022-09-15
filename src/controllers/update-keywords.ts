@@ -18,7 +18,7 @@ controller.chatType('private').hears(/(\+|-)(.+)/, async ctx => {
 	} catch (object) {
 		const error = object as Error
 		await ctx.text('result.fail', {
-			error: `${ctx.i18n.t('errors.unknown')}:\n${error.message}`
+			error: `${ctx.i18n.t('error.unknown')}:\n${error.message}`
 		})
 	}
 })
